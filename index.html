@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+
+    <link rel='stylesheet' href="styleS.css">
+</head>
+
+<body>
+    <div class="masked"></div>
+    <div class="maskColor"></div>
+    <script src='https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js'></script>
+    <header>
+        <h1 id='title'>Survey Form</h1>
+        <p id='description'>Thank you for taking the time to fill this Survey</p>
+    </header>
+
+    <form id='survey-form'>
+        <label for="name" id ='name-label'> Name </label>
+        <br>
+        <input id='name' type='text' placeholder='Enter your name' size=40 required>
+        <br>
+        <label for="email" id ='email-label'> E-mail</label>
+        <br>
+        <input id='email' type='email' placeholder='Enter your email' size=40 required>
+        <br>
+        <label for="number" id ='number-label'> Age </label>
+        <br>
+        <input id='number' type='number' placeholder='Enter your age' min="13" max="100">
+        <br>
+
+        <label>Which option describes your current role?</label>
+        <br/>
+        <select id="dropdown" placeholder='select'>
+            <!-- first option is for placeholding -->
+            <option value="" disabled selected hidden> Chose current role </option>
+            <option value="student">Student</option>
+            <option value="full time job">Full Time Job</option>
+            <option value="fulltimelearner">Full Time Learner</option>
+            <option value="other">Other</option>
+        </select>
+        <br>
+  
+
+        <div class="learning-opportunities">
+            <p> What are you looking for?</p>
+            <label for="learning-opportunities">
+                <input id="learning-opportunities" type="radio" name="select-one" value="yes" >Learning Opportunities 
+            </label>
+            <br>
+            <label for="full-time-job"> 
+                <input id="full-time-job" type="radio" name="select-one" value="yes">Full Time Job
+            </label>
+            <br>
+            <label for="technical-resources"> 
+                <input id="technical-resources" type="radio" name="select-one" value="yes">Technical Resources
+            </label>
+        </div>
+ 
+        <div class="interests">
+            <p> What are you interested in? </p>
+            <label><input id="front" type="checkbox" name="name" class='checkbox' value="yes"> Front-End Projects </label>
+            <br>
+            <label><input id="back" type="checkbox" name="name" class='checkbox' value="yes"> Back-End Projects </label>
+            <br>
+            <label><input id="data" type="checkbox" name="name" class='checkbox' value="yes"> Data Visualisation </label>
+            <br>
+            <label><input id="openS" type="checkbox" name="name" class='checkbox' value="yes"> Open Source contribution </label>
+            <br>
+            <label><input id="videos" type="checkbox" name="name" class='checkbox' value="yes"> Technical Videos/Blog/Articles  </label>
+            <br>
+            <label><input id="webdev" type="checkbox" name="name" class='checkbox' value="yes">  Web Development</label>
+            <br>
+            <label><input id="Competitive" type="checkbox" name="name" class='checkbox' value="yes"> Competitive Programming </label>
+            <br>
+        </div>
+
+        <p> Any other comments?</p>
+        <textarea rows = "5" cols = "50" name = "description" id='comment'>
+        </textarea>
+        <br>
+
+        <div class="submit-button">
+            <button id='submit' type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>
